@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "prisma skills sync || exit 0"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prisma/client": "^6.17.0",
+    "prisma": "^6.17.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.15"
+  },
+  "dependencies": {
+    "@nestjs/common": "^12.4.0",
+    "reflect-metadata": "^0.2.2"
+  }
+}
